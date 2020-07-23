@@ -3,3 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  background: #567;
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+#target-month{
+  text-align: center;
+  color: pink;
+}
+
+.holidays{
+  color: red;
+}

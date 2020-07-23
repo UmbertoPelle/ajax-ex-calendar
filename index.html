@@ -3,13 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Calendar</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/it.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <script id="month-template" type="text/x-handlebars-template">
+      <li data-dateComplete='{{ dateComplete }}'>{{ day }}</li>
+    </script>
+
   </head>
   <body>
 
-    <ul id="days">
+    <h1>Gennaio-2018</h1>
+    <ul id="target-month">
 
     </ul>
 
