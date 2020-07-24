@@ -19,5 +19,18 @@ h1{
 }
 
 .holidays{
-  color: red;
+  color: lightgoldenrodyellow;
+}
+
+.changeMonth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.changeMonth i{
+  color: lightgoldenrodyellow;
+  font-size: 17px;
+  margin: 8px;
+  cursor: pointer;
 }

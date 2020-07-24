@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/it.min.js"></script>
@@ -13,8 +14,25 @@
 
   </head>
   <body>
-
-    <h1>Gennaio-2018</h1>
+    <div class="changeMonth">
+      <!-- <i id="prev" class="fas fa-arrow-left"></i> -->
+      <h1 id="month-2018"></h1>
+      <!-- <i id="next" class="fas fa-arrow-right"></i> -->
+      <select class="mesi" name="">
+        <option value="1" selected>Gennaio</option>
+        <option value="2">Febbraio</option>
+        <option value="3" >Marzo</option>
+        <option value="4">Aprile</option>
+        <option value="5">Maggio</option>
+        <option value="6">Giugno</option>
+        <option value="7">Luglio</option>
+        <option value="8">Agosto</option>
+        <option value="9">Settembre</option>
+        <option value="10">Ottobre</option>
+        <option value="11">Nobembre</option>
+        <option value="12">Dicembre</option>
+      </select>
+    </div>
     <ul id="target-month">
 
     </ul>
