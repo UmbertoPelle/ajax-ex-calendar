@@ -8,7 +8,7 @@ function changeMonth() {
 }
 
 function getDays(value) {
-  var target = $('#target-month');
+  var target = $('.test-calendar');
   target.text("");
   var currentMonth = moment('2018-'+value,'YYYY-M');
   var howManyDays = currentMonth.daysInMonth();
@@ -56,9 +56,9 @@ function getHolidays(currentMonth) {
 
 function checkHoliday(arrayHoliday) {
   for (var i = 0; i < arrayHoliday.length; i++){
-    var festivita = $('#target-month li[data-dateComplete='+arrayHoliday[i]['date']+']');
+    var festivita = $('.test-calendar div[data-dateComplete='+arrayHoliday[i]['date']+']');
     festivita.addClass('holidays');
-    festivita.append(' - ' + arrayHoliday[i]['name']);
+    festivita.append(' <br> ' + arrayHoliday[i]['name']);
   }
 }
 
