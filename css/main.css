@@ -24,6 +24,11 @@ h1{
   align-items: center;
 }
 
+.changeMonth img{
+  width: 10%;
+  margin-right: 7px;
+}
+
 .changeMonth .mesi{
   margin-left: 5px;
 }
@@ -32,11 +37,13 @@ h1{
   width: 1000px;
   height: 500px;
   margin: auto;
+  padding: 20px 0;
 }
 
 .test-day{
   width: calc(100% / 5);
   height: calc(100% / 5);
+  font-size: 25px;
   border: solid 1px ;
   background-color: #fff;
   float: left;
@@ -45,4 +52,5 @@ h1{
 
 .holidays{
   background: green;
+  color: #fff;
 }
