@@ -1,6 +1,8 @@
 function changeMonth() {
   var selectMonth = $('.mesi');
-  var value;
+  var value = selectMonth.val();
+  getDays(value);
+  
   selectMonth.change(function () {
     value = selectMonth.val()
     getDays(value);
@@ -26,10 +28,9 @@ function getDays(value) {
       'dateComplete': dateComplete.format('YYYY-MM-DD'),
       'day': i +' - '+ dateComplete.format('dddd')
     });
+
     target.append(daysHTML)
   }
-
-
   getHolidays(currentMonth);
 }
 
@@ -64,7 +65,6 @@ function checkHoliday(arrayHoliday) {
 
 function init() {
   changeMonth();
-  getDays();
 }
 
 
