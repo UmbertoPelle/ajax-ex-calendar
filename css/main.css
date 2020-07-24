@@ -28,9 +28,6 @@ h1{
   align-items: center;
 }
 
-.changeMonth i{
-  color: lightgoldenrodyellow;
-  font-size: 17px;
-  margin: 8px;
-  cursor: pointer;
+.changeMonth .mesi{
+  margin-left: 5px;
 }

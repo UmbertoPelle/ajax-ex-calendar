@@ -4,8 +4,9 @@ function changeMonth() {
   selectMonth.change(function () {
     value = selectMonth.val()
     getDays(value);
-  })
+  });
 }
+
 function getDays(value) {
   var target = $('#target-month');
   target.text("");
