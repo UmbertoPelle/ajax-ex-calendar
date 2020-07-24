@@ -58,7 +58,7 @@ function checkHoliday(arrayHoliday) {
   for (var i = 0; i < arrayHoliday.length; i++){
     var festivita = $('.test-calendar div[data-dateComplete='+arrayHoliday[i]['date']+']');
     festivita.addClass('holidays');
-    festivita.append(' <br> ' + arrayHoliday[i]['name']);
+    festivita.append(' <h3> ' + arrayHoliday[i]['name'] + ' </h3> ');
   }
 }
 
